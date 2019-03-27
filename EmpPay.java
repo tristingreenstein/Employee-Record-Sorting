@@ -30,11 +30,12 @@ public class EmpPay
        // uncomment the printRecords calls as you work down the list
        
        // test the code as you implement each method
-      
        numEmpRecords = loadRecordsFromFile(empNames, empHoursWorked, empHourlyRates);
+       System.out.println("LOADING RECORDS FROM FILE_______________________");
        printRecords(empNames, empHoursWorked, empHourlyRates, empPay, numEmpRecords);
        System.out.println();
       
+       System.out.println("CALCULATE PAY___________________________________");
        calculatePay(empHoursWorked, empHourlyRates, empPay, numEmpRecords);
        printRecords(empNames, empHoursWorked, empHourlyRates, empPay, numEmpRecords);
        System.out.println();
@@ -87,7 +88,7 @@ public class EmpPay
                
             if(stored.length() < 0)
             {
-               System.out.println("[TESTING]# Of Employee Records: "+ 0); 
+               //System.out.println("[TESTING]# Of Employee Records: "+ 0); 
                return 0;
             }
                
@@ -102,7 +103,7 @@ public class EmpPay
                
                 empCount++;//Counts amount of records 
             }
-            System.out.println("[TESTING PURPOSE]# Of Employee Records: "+empCount); 
+            //System.out.println("[TESTING PURPOSE]# Of Employee Records: "+empCount); 
             input.close();
         }  
         catch (IOException e) 
