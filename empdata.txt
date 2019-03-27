@@ -1,0 +1,4 @@
+Martin 40 23.50 
+Smith 34 27.00 
+Johnson 44.5 21.75 
+Wong 47.5 23.40 
